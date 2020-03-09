@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc3d80c-ec80-4359-98ea-6f240f002350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Thuc hanh khai bao su dung bien/thuc hanh khai bao bien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuc hanh su dung toan tu/Thuc hanh su dung toan tu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583670940054</updated>
       <workItem from="1583670942324" duration="5071000" />
-      <workItem from="1583716095219" duration="1177000" />
+      <workItem from="1583716095219" duration="3409000" />
     </task>
     <servers />
   </component>
