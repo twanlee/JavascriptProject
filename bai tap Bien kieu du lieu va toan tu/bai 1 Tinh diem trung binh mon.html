@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+<script>
+    let nhapSinhhoc;
+    let nhapVatli;
+    let nhapHoahoc;
+    nhapSinhhoc=prompt("Nhập điểm môn Sinh Học");
+    nhapVatli=prompt("Nhập điểm môn Vật lí");
+    nhapHoahoc=prompt("Nhập điểm môn hoá học");
+    let sinh=parseInt(nhapSinhhoc);
+    let li=parseInt(nhapVatli);
+    let hoa=parseInt(nhapHoahoc);
+    let tb=(sinh+hoa+li)/3
+    let diem= tb.toFixed(2)
+    document.write("Điểm trung bình = "+diem)
+</script>
+</body>
+</html>
