@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh luyen tap Toan tu 3 ngoi Bai 2</title>
+</head>
+<body>
+<script>
+    let login = prompt("Đăng nhập")
+    let massage = (login === 'Employee')?
+        'Hello':
+        (login=== 'Director')?
+            'Greatings':
+            (login==='')?
+                'No login':
+                '';
+    alert(massage)
+</script>
+</body>
+</html>
