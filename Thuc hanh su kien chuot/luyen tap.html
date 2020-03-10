@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SỰ kiện chuột</title>
+</head>
+<body>
+<img id="myImage" style="width:300px" src="https://cdn.vox-cdn.com/thumbor/w2P7h9AY3B_TL2RveD8l0WII8EE=/0x27:4415x3338/1200x800/filters:focal(0x27:4415x3338)/cdn.vox-cdn.com/uploads/chorus_image/image/43170476/ghosts.0.0.jpg"/>
+<p>Click button bellow to move the image to the right!</p>
+<button type="button" onclick="moveRight()">Click here</button>
+<script>
+    imgObj=document.getElementById('myImage');
+    function init() {
+        imgObj.style.position='relative';
+        imgObj.style.left= "0px";
+    }
+    function moveRight() {
+        imgObj.style.left=parseInt(imgObj.style.left) + '1' + 'px';
+    }
+    window.onload=init;
+</script>
+</body>
+</html>
