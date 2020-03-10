@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<p>Amount</p><br/>
+<input type="text" id="inputValue"><br/>
+<p>From Currency</p><br/>
+<select>
+    <option id="vietnam" value="Việt Nam">Việt Nam</option>
+</select>
+<p>To Currency</p><br/>
+<select>
+    <option id="money" value="USD">USD</option>
+    <option id="euro" value="USD">EURO</option>
+</select><br/>
+<br/>
+<button type="button" onclick="myFunction()">Convert</button><br/>
+<p id="result">Kết quả</p>
+<script>
+    let vnd = document.getElementById("inputValue").value;
+    if (document.getElementById("money").value === "USD"){
+        let usd = Number(vnd)/23000;
+        document.getElementById("result").innerHTML= "Kết quả = " +usd;
+    }
+    else if(document.getElementById("euro").value === "EURO"){
+        let euro = Number(vnd)/30000;
+        document.getElementById("result").innerHTML= "Kết quả = " +euro;
+    }
+
+</script>
+</body>
+</html>
