@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Move Laputa</title>
+</head>
+<body onload="batDau()">
+<img id="Laputa" src="https://sachhaynendoc.net/wp-content/uploads/2019/05/thanh-pho-laputa-lo-lung-trong-khong-trung.png" style="position: absolute;top: 0;left: 0" height="200" width="180"/>
+<script>
+    let a=document.getElementById('Laputa');
+    function len() {
+    a.style.top=parseInt(a.style.top) -5 + 'px';
+    }
+    function xuong() {
+    a.style.top=parseInt(a.style.top) +5 +'px';
+    }
+    function trai() {
+    a.style.left=parseInt(a.style.left) - 5 + 'px'
+    }
+    function phai() {
+    a.style.left=parseInt(a.style.left) + 5 +'px'
+    }
+    function diChuyen() {
+        switch (event.keyCode) {
+            case 37:
+                trai();
+                break;
+            case 39:
+                phai();
+                break;
+            case 38:
+                len();
+                break;
+            case 40:
+                xuong();
+                break;
+        }
+    }
+    function batDau() {
+        window.addEventListener("keydown", diChuyen)
+
+
+    }
+</script>
+</body>
+</html>
