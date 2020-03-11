@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc3d80c-ec80-4359-98ea-6f240f002350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Thuc hanh su dung vong lap For/Bai 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thuc hanh su dung vong lap For/bai 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuc hanh su dung vong lap While/Bai 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuc hanh su dung vong lap While/bai 2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai tap ung dung chuyen doi tien te/Ung dung chuyen doi tien te.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai tap ung dung chuyen doi tien te/Ung dung chuyen doi tien te.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1583716095219" duration="27071000" />
       <workItem from="1583801986700" duration="33048000" />
       <workItem from="1583887253357" duration="9369000" />
-      <workItem from="1583899915106" duration="265000" />
+      <workItem from="1583899915106" duration="2032000" />
     </task>
     <servers />
   </component>
