@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<p><b>Caculator</b></p>
+<input type="text" id="input1" value="12"/>
+<input type="text" id="input2" value="12"/><br/><br/>
+<button type="button" onclick="cal('+')">Addition(+)</button>
+<button type="button" onclick="cal('-')">Subtraction(-)</button>
+<button type="button" onclick="cal('*')">Multiplication(X)</button>
+<button type="button" onclick="cal('/')">Division(/)(+)</button><br/><br/>
+<p><b>Kết quả: </b></p>
+<p id="result"></p>
+<script>
+    function cal(operator) {
+        let a = Number(document.getElementById('input1').value);
+        let b = Number(document.getElementById('input2').value);
+        let result = 0;
+        switch (operator) {
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+            case '/':
+                if (b === 0) {
+                    alert('Cannot devide to zero');
+                }
+                result = a / b;
+                break;
+        }
+        document.getElementById('result').innerHTML=result.toString()
+    }
+
+</script>
+
+</body>
+</html>
