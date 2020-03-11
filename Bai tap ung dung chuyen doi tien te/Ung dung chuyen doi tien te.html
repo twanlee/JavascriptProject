@@ -12,22 +12,25 @@
     <option id="vietnam" value="Việt Nam">Việt Nam</option>
 </select>
 <p>To Currency</p><br/>
-<select>
-    <option id="money" value="USD">USD</option>
-    <option id="euro" value="USD">EURO</option>
+<select id="toMoney">
+    <option value="USD">USD</option>
+    <option value="EURO">EURO</option>
 </select><br/>
 <br/>
 <button type="button" onclick="myFunction()">Convert</button><br/>
 <p id="result">Kết quả</p>
 <script>
-    let vnd = document.getElementById("inputValue").value;
-    if (document.getElementById("money").value === "USD"){
-        let usd = Number(vnd)/23000;
-        document.getElementById("result").innerHTML= "Kết quả = " +usd;
-    }
-    else if(document.getElementById("euro").value === "EURO"){
-        let euro = Number(vnd)/30000;
-        document.getElementById("result").innerHTML= "Kết quả = " +euro;
+    function myFunction() {
+        let vnd = Number(document.getElementById("inputValue").value);
+        let x = document.getElementById('toMoney').value;
+        if (x==='USD') {
+            let usd = vnd / 23000;
+            document.getElementById("result").innerHTML = "Kết quả = " + usd;
+        }
+        else if(x==='EURO') {
+            let usd = vnd / 30000;
+            document.getElementById("result").innerHTML = "Kết quả = " + usd;
+        }
     }
 
 </script>
