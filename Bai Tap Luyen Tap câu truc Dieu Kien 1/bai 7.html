@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tập 7</title>
+</head>
+<body>
+<p>Nhập số phút đã gọi trong tháng<br/>
+    Phí thuê bao bắt buộc là 25 nghìn.<br/>
+    600 đồng cho mỗi gọi của 50 phút đầu tiên.<br/>
+    400 đồng cho mỗi phút gọi của 150 phút tiếp theo.<br/>
+    200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.</p><br>
+<input type="text" id="phut">
+<button type="button" onclick="tinh()">Tính tiền</button>
+<p id = result>Số tiền: </p>
+<script>
+    function tinh() {
+        let x =Number(document.getElementById('phut').value)
+        if(x>200){
+            let a = (x-200)*200+150*400+50*600+25000;
+            document.getElementById('result').innerHTML= "Kết quả = "+a;
+        }else if(x>=150&&x<=200){
+            let a = (x-150)*400+50*600+25000;
+            document.getElementById('result').innerHTML= "Kết quả = "+a;
+        }else if(x<=50){
+            let a = x*600+25000;
+            document.getElementById('result').innerHTML= "Kết quả = "+a;
+        }else if(x>50&&x<150){
+            let a = (x-150)*400+(600*x);
+            document.getElementById('result').innerHTML= "Kết quả = "+a;
+        }
+
+    }
+</script>
+</body>
+</html>

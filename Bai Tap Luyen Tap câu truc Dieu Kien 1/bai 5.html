@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<p>Điểm kiểm tra</p><br>
+<input type="text" id="kiemtra"><br/>
+<p>Điểm thi giữa kì</p><br/>
+<input type="text" id="giuaki"><br/>
+<p>Điểm thi cuối kì</p><br/>
+<input type="text" id="cuoiki"><br/>
+<button type="button" onclick="avar()">Submit</button>
+<p>Điểm trung bình:</p><br/>
+<p id="tb"></p>
+<p>Xếp loại:</p><br/>
+<p id="xl"></p>
+<script>
+    function avar() {
+        let a = Number(document.getElementById('kiemtra').value);
+        let b = Number(document.getElementById('giuaki').value);
+        let c = Number(document.getElementById('cuoiki').value);
+        let x = (a + b + c) / 3;
+        if (x >= 8) {
+            document.getElementById('tb').innerHTML = x;
+            document.getElementById('xl').innerHTML = 'Giỏi';
+        } else if (x>5&&x<8) {
+            document.getElementById('tb').innerHTML = x;
+            document.getElementById('xl').innerHTML = 'Trung bình';
+        } else if (x <= 5) {
+            document.getElementById('tb').innerHTML = x;
+            document.getElementById('xl').innerHTML = 'Yếu';
+        }
+    }
+</script>
+</body>
+</html>

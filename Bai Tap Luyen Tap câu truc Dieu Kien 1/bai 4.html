@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số'));
+    let b = parseInt(prompt('Nhập số'));
+    let c = parseInt(prompt('Nhập số'));
+    if (a>b){
+        if (a>c){
+            document.write('Số lớn nhất là: ' + a);
+        }else {
+            document.write('Số lớn nhất là: ' + c);
+        }
+    }else if(b>a){
+        if (b>c){
+            document.write('Số lớn nhất là: ' + b);
+        }else {
+            document.write('Số lớn nhất là: ' + c);
+        }
+    }else if (c>a){
+        if(c>b){
+            document.write('Số lớn nhất là: ' + c);
+        }else {
+            document.write('Số lớn nhất là: ' + b);
+        }
+    }
+</script>
+</body>
+</html>
