@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let a,b,table;
+        table="<table border='1'>";
+    for(a=1;a<11;a++){
+        table=table+"<tr align='center'>";
+        for (b=1;b<11;b++){
+            table=table+"<td>"+a+"x"+b+"="+ a*b+"</td>";
+        }table=table+"</tr>";
+    }document.write(table);
+</script>
+</body>
+</html>
