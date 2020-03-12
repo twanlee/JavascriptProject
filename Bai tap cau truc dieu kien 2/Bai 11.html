@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+
+<!-- 30% thuế thu nhập nếu lương là 15 triệu
+20% thuế thu nhập nếu lương từ 7 đến 15 triệu
+10% thuế thu nhập nếu lương dưới 7 triệu-->
+
+<p>Nhập vào lương của bạn</p>
+<input type="text" id="salary">
+<button type="button" onclick="tinh()">Tính thuế</button>
+<p>Tiền lương sau thuế của bạn:</p>
+<p id="result"></p>
+<script>
+    function tinh() {
+        let a = Number(document.getElementById('salary').value);
+        let b;
+        if(a<7000000){
+            b=a-(a*0.1);
+            document.getElementById('result').innerHTML=b;
+        }else if(a>=7000000&&a<=15000000){
+            b=a-(a*0.2);
+            document.getElementById('result').innerHTML=b;
+        }else if(a>15000000){
+            b=a-(a*0.3);
+            document.getElementById('result').innerHTML=b;
+        }
+    }
+</script>
+</body>
+</html>

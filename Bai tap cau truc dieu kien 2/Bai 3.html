@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Diện tích hình vuông</title>
+</head>
+<body>
+<p> Diên tích hình vuông</p>
+<input type="text" id="inputValue"><br/>
+<button type="button" onclick="doi()">Tính</button>
+<p id="result">Kết quả</p>
+<script>
+    function doi() {
+        let c = Number(document.getElementById('inputValue').value);
+        let f = Math.pow(c,2);
+        document.getElementById('result').innerHTML = "Kết quả = " + f;
+    }
+</script>
+</body>
+</html>

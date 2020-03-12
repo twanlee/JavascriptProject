@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<p>Nhập giá trị a</p>
+<input type="text" id="aValue">
+<p>Nhập giá trị b</p>
+<input type="text" id="bValue">
+<p>Nhập giá trị c</p>
+<input type="text" id="cValue">
+<button type="button" onclick="change()">Tính toán</button>
+<p>Đáp án</p>
+<p id="result"></p>
+<script>
+    function change() {
+        let a, b, c, delta,x,x1,x2;
+        a = Number(document.getElementById('aValue').value);
+        b = Number(document.getElementById('bValue').value);
+        c = Number(document.getElementById('cValue').value);
+        delta = b * b - 4 * a * c;
+        if(delta<0){
+            document.getElementById('result').innerHTML= "Phương trình vô nghiệm";
+        }else if(delta===0){
+            x = -b/2*a;
+            document.getElementById('result').innerHTML= x;
+        }else if(delta>0){
+            x1 = (-b + Math.sqrt(delta))/(2*a);
+            x2 = (-b - Math.sqrt(delta))/(2*a);
+            document.getElementById('result').innerHTML= "Phương trình có 2 nghiệm là:<br/> " + x1 +" <br/> và <br/>" +x2;
+        }
+    }
+</script>
+</body>
+</html>

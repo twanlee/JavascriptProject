@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Chuyển từ mét sang feet</title>
+</head>
+<body>
+<p> Chuyển từ mét sang feet</p>
+<input type="text" id="inputValue"><br/>
+<button type="button" onclick="doi()">Chuyển đổi</button>
+<p id="result">Kết quả</p>
+<script>
+    function doi() {
+        let c = Number(document.getElementById('inputValue').value);
+        let f = c * 3.2808;
+        document.getElementById('result').innerHTML = "Kết quả = " + f;
+    }
+</script>
+</body>
+</html>

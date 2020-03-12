@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+<p>Nhập giá trị a</p>
+<input type="text" id="aValue">
+<p>Nhập giá trị b</p>
+<input type="text" id="bValue">
+<button type="button" onclick="change()">Tính toán</button>
+<p>Đáp án</p>
+<p id="result"></p>
+<script>
+    function change() {
+        let a=Number(document.getElementById('aValue').value);
+        let b=Number(document.getElementById('bValue').value);
+        let x;
+        if(a===0){
+            if(b===0){
+                document.getElementById('result').innerHTML="Phương trình Vố số nghiệm";
+            }else {
+                document.getElementById('result').innerHTML="Phương trình vô nghiệm";
+            }
+        }else {
+            x=-b/a;
+            document.getElementById('result').innerHTML="Kết quả = " + x;
+        }
+    }
+</script>
+</body>
+</html>

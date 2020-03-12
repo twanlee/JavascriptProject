@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi kép</title>
+</head>
+<body>
+<p>Số tiền vay ban đầu</p>
+<input type="text" id="preMoney">
+<p>Lãi suất hàng tháng (%)</p>
+<input type="text" id="interest">
+<p>Số tháng vay</p>
+<input type="text" id="month">
+<p>Số lần ghép lãi trong tháng</p>
+<input type="text" id="gheplai">
+<button type="button" onclick="tinh()">Tính lãi</button>
+<p>Kết quả</p>
+<p id="result"></p>
+<script>
+    function tinh() {
+        let p=Number(document.getElementById('preMoney').value);
+        let i = Number(document.getElementById('interest').value);
+        let n = Number(document.getElementById('month').value);
+        let m = Number(document.getElementById('gheplai').value);
+        let x = 1+(i/m);
+        let y = n*m;
+        let z = Math.pow(x,y);
+        let f = p*z;
+        document.getElementById('result').innerHTML=f;
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tính giá điện</title>
+</head>
+<body>
+<p>Nhập số điện</p>
+<input type="text" id="soDien">
+<p>Nhập giá số điện (VND)</p>
+<input type="text" id="giaDien">
+<button type="button" onclick="tinh()">Tính giá</button>
+<p>Kết quả</p>
+<p id="result"></p>
+<script>
+    function tinh() {
+        let a=Number(document.getElementById('soDien').value);
+        let b=Number(document.getElementById('giaDien').value);
+        let c = a*b;
+        document.getElementById('result').innerHTML=c;
+    }
+</script>
+</body>
+</html>

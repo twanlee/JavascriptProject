@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cạnh Tam Giác</title>
+</head>
+<body>
+<p>Nhập vào cạnh a</p>
+<input type="text" id="aValue">
+<p>Nhập vào cạnh b</p>
+<input type="text" id="bValue">
+<p>Nhập vào cạnh c</p>
+<input type="text" id="cValue">
+<button type="button" onclick="check()">Kiểm tra</button>
+<p>Kết quả:</p>
+<p id="result"></p>
+<script>
+    function check() {
+        let a = Number(document.getElementById('aValue').value)
+        let b = Number(document.getElementById('bValue').value)
+        let c = Number(document.getElementById('cValue').value)
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c&&b + c > a&&a + c > b) {
+                document.getElementById('result').innerHTML="Đây là các cạnh của tam giác"
+            }else {
+                document.getElementById('result').innerHTML="Đây không là các cạnh của tam giác"
+            }
+        }
+    }
+</script>
+</body>
+</html>

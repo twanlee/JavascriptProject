@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ độ C sang độ F</title>
+</head>
+<body>
+<p>Chuyển từ độ C sang độ F</p>
+<input type="text" id="inputValue"><br/>
+<button type="button" onclick="doi()">Chuyển đổi</button>
+<p id="result">Kết quả</p>
+<script>
+    function doi() {
+        let c = Number(document.getElementById('inputValue').value);
+        let f = c * 9 / 5 + 32;
+        document.getElementById('result').innerHTML = "Kết quả = " + f;
+    }
+</script>
+</body>
+</html>
