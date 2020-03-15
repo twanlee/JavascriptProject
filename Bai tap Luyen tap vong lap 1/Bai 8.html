@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đoán số</title>
+</head>
+<body>
+<h1>Hãy thử đoán xem</h1>
+<button type="button" onclick="pick()">Chơi</button>
+<script>
+    function guess(guessNumber, randomNumber) {
+        if (guessNumber === randomNumber) {
+            return alert('You Win');
+        } else if (guessNumber < randomNumber) {
+            alert('Số này bé hơn');
+            guessNumber = inputGuessNumber();
+            guess(guessNumber, randomNumber);
+        } else if (guessNumber > randomNumber) {
+            alert('Số này lớn hơn');
+            guessNumber = inputGuessNumber();
+            guess(guessNumber, randomNumber);
+        }
+    }
+
+    function random(fromNumber, toNumber) {
+        return Math.floor(Math.random() * toNumber) + fromNumber;
+    }
+
+    function inputGuessNumber() {
+        return Number(prompt('Đoán số'));
+    }
+
+    function pick() {
+        let fromNumber = Number(prompt('Bắt đầu từ số:'));
+        let toNumber = Number(prompt('Đến số'));
+        let guessNumber = inputGuessNumber();
+
+        let randomNumber = random(fromNumber, toNumber);
+        console.log(randomNumber);
+        guess(guessNumber, randomNumber);
+    }
+</script>
+</body>
+</html>

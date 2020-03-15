@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng Fibonacci</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=1;
+    let text;
+    let sum;
+    for (i=0;i<20;i++){
+        text=a+b;
+        a=b;
+        b=text;
+        sum=text+text;
+    }document.write(sum);
+</script>
+</body>
+</html>
