@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    let i=Number(prompt('Nhập số tính giai thừa'));
+    let mult=i;
+    if(i===0||i===1){
+        document.write('1');
+    }
+    while(i>1){
+        i--;
+        mult=mult*i;
+    }document.write(mult);
+</script>
+</body>
+</html>
