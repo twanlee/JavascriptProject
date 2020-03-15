@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chọn ra Số Nguyên Tố</title>
+    <title>Hiển thị Số Nguyên Tố</title>
 </head>
 <body>
 <script>
-    let a,b,c;
-    a=Number(prompt('Nhập số:'));
-    for(b=1;b<a;b++){
-        let c=1;
-             while (c<a){
-            if(b%c===0){
-                document.write(b+"<br/>");
-            }
-        } c++;
-
+    let a=2;
+    let count = 0;
+    while (count<20){
+        let check=0;
+        let b=1;
+        do {if(a%b===0){
+            check++;
+        }b++;
+        }while (b<=a);
+        if(check===2){
+            document.write(a+'<br/>');
+            count++;
+        }
+        a++;
     }
 </script>
 </body>
