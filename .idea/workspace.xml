@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc3d80c-ec80-4359-98ea-6f240f002350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai Tap_Ung dung Good Fast Cheap/Bai Tap_Ung dung Good Fast Cheap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai tap game Puzzle/Bai tap game Puzzle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai tap game Puzzle/Bai tap game Puzzle.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +93,7 @@
       <workItem from="1584330660460" duration="5734000" />
       <workItem from="1584521138071" duration="606000" />
       <workItem from="1584529169099" duration="17000" />
+      <workItem from="1584776771208" duration="8094000" />
     </task>
     <servers />
   </component>

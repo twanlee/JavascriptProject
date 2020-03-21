@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <title>Game Puzzle</title>
 </head>
-<body>
+<body onload="play()">
 <p>Hãy chọn các bức ảnh về 1 chủ đề!</p>
 <p id="result"></p>
-<img src="image_1_part_1.jpg" onclick="change()" alt="anh1" width="300" height="200"/><br/>
-<img src="image_1_part_2.jpg" onclick="change()" alt="anh2" width="300" height="200"/><br/>
-<img src="image_1_part_3.jpg" onclick="change()" alt="anh3" width="300" height="200"/><br/>
+<img src="image_1_part_1.jpg" name="sea1" onclick="change1()" id ="image1" width="300" height="200"/><br/>
+<img src="image_1_part_2.jpg" name="sea2" onclick="change2()" id ="image2" width="300" height="200"/><br/>
+<img src="image_1_part_3.jpg" name="sea3" onclick="change3()" id="image3" width="300" height="200"/><br/>
 </body>
+<script>
+    function play(){
+        let imageArray1 = ['image_1_part_1.jpg','image_2_part_1.jpg'];
+        let imageArray2 = ['image_1_part_2.jpg','image_2_part_2.jpg'];
+        let imageArray3 = ['image_1_part_3.jpg','image_2_part_3.jpg'];
+        let num1 = Math.floor(Math.random() * (imageArray1.length));
+        document.getElementById('image1').src=""+ imageArray1[num1];
+        let num2 = Math.floor(Math.random() * (imageArray2.length));
+        document.getElementById('image2').src=""+ imageArray2[num2];
+        let num3 = Math.floor(Math.random() * (imageArray3.length));
+        document.getElementById('image3').src=""+ imageArray3[num3];
+    }
+    function change1() {
+        if(document.getElementById('image1').src=='http://localhost:63342/JavascriptProject/Bai%20tap%20game%20Puzzle/image_1_part_1.jpg'){
+            document.getElementById('image1').src='image_2_part_1.jpg';
+        }else if( document.getElementById('image1').src=='http://localhost:63342/JavascriptProject/Bai%20tap%20game%20Puzzle/image_2_part_1.jpg'){
+            document.getElementById('image1').src='image_1_part_1.jpg';
+        }check();
+    }
+    function change2() {
+        if(document.getElementById('image2').src=='http://localhost:63342/JavascriptProject/Bai%20tap%20game%20Puzzle/image_1_part_2.jpg'){
+            document.getElementById('image2').src='image_2_part_2.jpg';
+        }else if( document.getElementById('image2').src=='http://localhost:63342/JavascriptProject/Bai%20tap%20game%20Puzzle/image_2_part_2.jpg'){
+            document.getElementById('image2').src='image_1_part_2.jpg';
+        }check();
+    }
+    function change3() {
+        if(document.getElementById('image3').src=='http://localhost:63342/JavascriptProject/Bai%20tap%20game%20Puzzle/image_1_part_3.jpg'){
+            document.getElementById('image3').src='image_2_part_3.jpg';
+        }else if( document.getElementById('image3').src=='http://localhost:63342/JavascriptProject/Bai%20tap%20game%20Puzzle/image_2_part_3.jpg'){
+            document.getElementById('image3').src='image_1_part_3.jpg';
+        }check();
+    }
+    function check() {
+       if(document.getElementById('image1').src.endsWith('image_1_part_1.jpg') && document.getElementById('image2').src.endsWith('image_1_part_2.jpg') && document.getElementById('image3').src.endsWith('image_1_part_3.jpg')){
+           document.getElementById('result').innerHTML='Bạn là người yêu Biển!';
+       }else if(document.getElementById('image1').src.endsWith('image_2_part_1.jpg') && document.getElementById('image2').src.endsWith('image_2_part_2.jpg') && document.getElementById('image3').src.endsWith('image_2_part_3.jpg')){
+           document.getElementById('result').innerHTML='Bạn yêu bầu trời!';
+       }
+    }
+</script>
 </html>
