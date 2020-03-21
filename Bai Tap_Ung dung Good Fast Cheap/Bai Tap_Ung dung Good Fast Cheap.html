@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai Tap_Ung dung Good Fast Cheap</title>
+</head>
+<body>
+<label><input type="checkbox" id="good" onclick="good()">Good</label><br/>
+<label><input type="checkbox" id="fast" onclick="fast()">Fast</label><br/>
+<label><input type="checkbox" id="cheap" onclick="cheap()">Cheap</label><br/>
+<script>
+    let x = document.getElementById('good').checked;
+    let y = document.getElementById('fast').checked;
+    let z = document.getElementById('cheap').checked;
+
+    function good() {
+        document.getElementById('good').checked = !x;
+        x = !x;
+        if (x && (y || z)) {
+            if (y === true) {
+                document.getElementById('cheap').checked = false;
+            } else if (z === false) {
+                document.getElementById('cheap').checked = true;
+            }
+        }
+    }
+    function fast() {
+        document.getElementById('fast').checked = !y;
+        y = !y;
+        if (y && (x || z)) {
+            if (x === true) {
+                document.getElementById('cheap').checked = false;
+            } else if (x === false) {
+                document.getElementById('cheap').checked = true;
+            }
+        }
+    }
+    function cheap() {
+        document.getElementById('cheap').checked = !z;
+        z = !z;
+        if (z && (x || y)) {
+            if (z === true) {
+                document.getElementById('fast').checked = false;
+            } else if (z === false) {
+                document.getElementById('fast').checked = true;
+            }
+        }
+    }
+</script>
+</body>
+</html>
+
