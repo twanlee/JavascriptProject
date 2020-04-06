@@ -9,14 +9,13 @@
     let a,b,sum;
     b=0;
     sum=0;
-    while (b<30){
-        if(a%7===0&&a!=0){
-            b++;
-            sum += a;
-            document.write(a+"<br/>");}
-        a++;
-    }
-    document.write("Tổng 30 số đầu tiên là: " + sum);
+   a = 7*30;
+   for (i=0; i<a; i++){
+       if(i%7===0){
+           sum += i;
+       }
+   }
+    document.write("Tổng 30 số đầu tiên chia hết cho 7 là: " + sum);
 
 
 </script>
